@@ -9,18 +9,16 @@ const INTERVAL_MS = 3800;
 
 export function Flavors() {
   const [active, setActive] = useState(0);
-  const [paused, setPaused] = useState(false);
-
   // Widen the panels one by one: chocolate, vanilla, strawberry, pistachio, repeat.
+  // The timer restarts after every change, so a click also resumes the loop.
+  // (With reduced motion the CSS transitions are off, so panels swap instantly.)
   useEffect(() => {
-    if (paused) return;
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const id = window.setInterval(() => {
-      if (reduce.matches) return;
-      setActive((i) => (i + 1) % FLAVORS.length);
-    }, INTERVAL_MS);
-    return () => window.clearInterval(id);
-  }, [paused, active]);
+    const id = window.setTimeout(
+      () => setActive((i) => (i + 1) % FLAVORS.length),
+      INTERVAL_MS,
+    );
+    return () => window.clearTimeout(id);
+  }, [active]);
 
   return (
     <section id="flavors" aria-labelledby="flavors-title">
@@ -34,13 +32,7 @@ export function Flavors() {
         </p>
       </div>
 
-      <div
-        className="overflow-hidden"
-        onMouseEnter={() => setPaused(true)}
-        onMouseLeave={() => setPaused(false)}
-        onFocus={() => setPaused(true)}
-        onBlur={() => setPaused(false)}
-      >
+      <div className="overflow-hidden">
         <div className="flex min-h-[640px] flex-col md:-mx-[4%] md:h-[640px] md:w-[108%] md:flex-row">
           {FLAVORS.map((f, i) => {
             const on = i === active;
