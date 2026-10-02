@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 349 540" width="349" height="540" style="color:#2A160C"><g transform="translate(60.0,60.0) scale(1.1230) translate(-98,-48)">
+  <defs>
+    <mask id="k" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="460">
+      <rect width="400" height="460" fill="#fff"></rect>
+      <g fill="#000" stroke="#000" stroke-width="20" stroke-linejoin="round">
+        <circle cx="200" cy="140" r="90"></circle><path d="M106 226 V220 Q106 206 122 206 H278 Q294 206 294 220 V226 a 18.8 18.8 0 0 1 -37.6 0 a 18.8 18.8 0 0 1 -37.6 0 a 18.8 18.8 0 0 1 -37.6 0 a 18.8 18.8 0 0 1 -37.6 0 a 18.8 18.8 0 0 1 -37.6 0 Z"></path>
+      </g>
+    </mask>
+  </defs>
+  <g mask="url(#k)" fill="#2A160C">
+    <path d="M110 214 L160 214 L211 356 L277 214 L290 214 L207 420 L203 420 Z"></path>
+  </g>
+  <g fill="#E02A3A"><circle cx="200" cy="140" r="90"></circle><path d="M106 226 V220 Q106 206 122 206 H278 Q294 206 294 220 V226 a 18.8 18.8 0 0 1 -37.6 0 a 18.8 18.8 0 0 1 -37.6 0 a 18.8 18.8 0 0 1 -37.6 0 a 18.8 18.8 0 0 1 -37.6 0 a 18.8 18.8 0 0 1 -37.6 0 Z"></path></g></g></svg>
