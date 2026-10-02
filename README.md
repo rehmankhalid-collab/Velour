@@ -19,3 +19,9 @@ NEXT_PUBLIC_SITE_URL=https://your-domain   # optional
 ```
 
 Without a key the checkout button shows "Online checkout is not configured yet."
+
+## Before launch
+
+- Replace the placeholder reviews and FAQ answers in `src/components/content-sections.tsx`.
+- Replace the address, hours and email in the Visit section (`src/components/footer-sections.tsx`).
+- Newsletter: set `NEWSLETTER_WEBHOOK_URL` to forward sign-ups (otherwise the form reports it is unavailable).

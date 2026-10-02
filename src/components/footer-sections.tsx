@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { Newsletter } from "./newsletter";
+
 export function Story() {
   return (
     <section id="story" aria-labelledby="story-title" className="bg-cup-vanilla text-cocoa">
@@ -46,17 +48,20 @@ export function Visit() {
 export function Footer() {
   return (
     <footer className="bg-velour-red text-cream">
-      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-10 md:flex-row">
-        <Image
-          src="/logo/velour-logo-horizontal-light.svg"
-          alt="Velour"
-          width={977}
-          height={450}
-          className="-my-6 h-[100px] w-auto"
-        />
-        <p className="text-[14px] italic">
-          Pure indulgence, one scoop at a time.
-        </p>
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-8 px-6 py-12 md:flex-row md:items-start">
+        <div className="text-center md:text-left">
+          <Image
+            src="/logo/velour-logo-horizontal-light.svg"
+            alt="Velour"
+            width={977}
+            height={450}
+            className="-mt-6 mb-3 h-[100px] w-auto"
+          />
+          <p className="text-[14px] italic">
+            Pure indulgence, one scoop at a time.
+          </p>
+        </div>
+        <Newsletter />
       </div>
     </footer>
   );
