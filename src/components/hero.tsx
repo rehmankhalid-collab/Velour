@@ -22,23 +22,14 @@ export function Hero() {
             Shop now
           </a>
         </div>
-        {/* The campaign image carries its own wordmark on the left third; crop it
-            so the live headline is the only one. */}
-        <div className="relative overflow-hidden" style={{
-          aspectRatio: "1.78 / 1.2",
-          maskImage:
-            "radial-gradient(ellipse 70% 70% at 50% 50%, #000 55%, transparent 100%)",
-        }}>
-          <Image
-            src="/hero/hero-lineup.png"
-            alt="Four Velour soft-serve cups: vanilla, chocolate, strawberry and pistachio"
-            width={1920}
-            height={1080}
-            priority
-            className="absolute top-1/2 h-auto w-[150%] max-w-none -translate-y-1/2"
-            style={{ left: "-50.4%" }}
-          />
-        </div>
+        <Image
+          src="/hero/hero-cups.png"
+          alt="Four Velour soft-serve cups: vanilla, chocolate, strawberry and pistachio"
+          width={1320}
+          height={1080}
+          priority
+          className="h-auto w-full"
+        />
       </div>
     </section>
   );
