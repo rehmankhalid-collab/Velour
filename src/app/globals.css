@@ -42,6 +42,12 @@
   --color-velour-red: var(--color-velour-red);
   --color-cream: var(--color-cream);
   --color-cocoa: var(--color-cocoa);
+  --color-cup-chocolate: var(--color-cup-chocolate);
+  --color-cup-vanilla: var(--color-cup-vanilla);
+  --color-flavor-chocolate: var(--color-flavor-chocolate);
+  --color-flavor-vanilla: var(--color-flavor-vanilla);
+  --color-flavor-strawberry: var(--color-flavor-strawberry);
+  --color-flavor-pistachio: var(--color-flavor-pistachio);
   --color-surface: var(--surface);
   --color-surface-raised: var(--surface-raised);
   --color-line: var(--line);
